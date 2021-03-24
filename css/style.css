@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#animado{
+    opacity: 100%;
+}
+
+#particles-js{
+   position: absolute;
+   height: 325vh;
+   width: 98vw;  
+   align-items: center;
+   
+}
+
+
+ 
+
+
+.portfolio-box:hover{
+    transition: all ease-out 0.5s;
+    transform: scale(1.01);
+}
+
+#animado6{
+    animation: blink 4s  infinite;
+}
+
+
+@keyframes blink{
+    0%{
+        opacity: 0%;
+    }
+    50%{
+        opacity: 100%;
+    }
+    100%{
+        opacity: 0%;
+    }
+}
+
+
+@keyframes mover{
+    0%{
+        opacity: 0%;
+        transform: translate(100%);
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+body{
+	font-family: 'Montserrat', sans-serif;
+    font-size: 5em;
+    background-repeat: repeat-x;
+    background-size:cover;
+   
+}
+header{
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+#titulo{
+    font-family: 'DotGothic16', sans-serif;
+}
+
+
+span{
+    opacity: 100%;
+    
+}
+span.fade{
+    opacity: 1%;
+    transition: all 1s  ease;
+}
+
+video{
+    width: 100%;
+}
+
+#seccion{
+    height: 100%;
+}
+
+h2{
+   
+    color: white;
+    font-size: 4rem;
+    text-align: center;
+    line-height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+#parallax{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    justify-content: center;
+    align-items: middle;
+    place-items: center;
+    height: 100vh;
+}
+
+
+#primero{
+    width: 100%;
+}
+
+
+.absolute{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    position: absolute;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.575);
+}
+
+h1{
+    font-size: 80px;
+    font-weight: 900;
+    z-index: 100;
+    color:#fff;
+    margin-bottom: 30px;
+}
+
+h1::after{
+    display: block;
+    width: 30%;
+    height: 10px;
+    content: "";
+    margin: auto;
+    background: #fff;
+}
+
+
+@media screen and (max-width: 800px){
+    h1{
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    h1{
+        font-size: 30px;
+        margin-bottom: 0;
+    }
+    h1::after{
+        display: none;
+    }
+}
+
+#titulo{
+    font-family: 'DotGothic16', sans-serif;
+}
+
+#dbz{
+    background-image: url(/assets/fondodbz.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  background-size: cover;
+    
+}
+
+
+#doom{
+    background-image: url(/assets/fondodoom.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+  background-size: cover;
+    
+}
+
+#games{
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgb(29, 28, 28) 0%, rgb(75, 75, 75) 57%);
+    background-repeat: repeat-x;
+    background-size: 75%;
+    margin-top: -20px;
+}
+#game1{
+   
+    
+    width: auto;
+
+}
+
+.carousel{
+	background: rgb(80, 79, 79);
+   
+}
+
+#contenido{
+    background: rgb(80, 79, 79, 45%);
+   
+   
+}
+
+
+.card-border{
+    border: solid 10px rgb(80, 79, 79);
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all ease-out 0.2s;
+}
+.card-border:hover{
+    transform: scale(1.05);
+}
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#carouselExampleCaptions{
+    border: solid 10px rgb(80, 79, 79);
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all ease-out 0.2s;
+}
+
+
+
+a:hover 
+{
+     color:#bd481a; 
+     text-decoration:none; 
+     cursor:pointer;  
+}
+#DS{
+    background: #212529;
+}
+#footer{
+    background:rgb(24, 23, 23);
+}
+
+#page-top::-webkit-scrollbar{
+width: 10px;
+background: #212529;
+}
+
+#page-top::-webkit-scrollbar-thumb{
+    background: grey;
+    border-radius: 15px;
+}
